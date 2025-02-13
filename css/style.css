@@ -41,4 +41,35 @@ body{
 .welcome {
     text-align: center;
     padding: 40px 20px;
+    border-radius: 25px;
+    background-color:white;
+    color:  rgb(36, 61, 61);
+}
+
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.event {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: black 1px solid;
+    max-width: 300px;
+    
+}
+.event img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10
+    ;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }

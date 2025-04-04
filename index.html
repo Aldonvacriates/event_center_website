@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- 🔧 INSTRUCTIONS
+    In VS Code, complete the tasks below using your .html and .css files.
 
+    WEBSITE STRUCTURE:
+    Your website must include the following pages:
+
+    Home Page: Introduces the event center and highlights its offerings.
+
+    Events Page: Lists upcoming events with details (names, dates, descriptions).
+
+    Menu Page: Showcases food options organized by categories.
+
+    Location Page: Displays location details with a map or image.
+    
+    Contact Us Page: Contains a form for visitor inquiries.
+    
+    📋 PROJECT REQUIREMENTS:
+    Navigation Bar (All Pages):
+    Create a simple navbar with links to all pages.
+    Ensure the navbar works consistently across all pages.
+    Home Page:
+    Add a hero image or banner representing the event center’s theme.
+    Include a welcome message and an “About Us” section.
+    Bonus: Add a featured section with links to the Events page.
+    -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Oneotria</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="site-header">
-        <a href="index.html" class="site-logo">Event Center</a>
-        <nav class="navbar">
-            <ul>
+        <a href="index.html" class="site-logo">Oneotria</a>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar" id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -35,19 +60,19 @@
             <h2>Upcoming Events</h2>
             <div class="event-grid">
                 <article class="event">
-                    <img src="https://images.freeimages.com/images/large-previews/461/concert-fans-1253861.jpg"
+                    <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Concert">
                     <h3>Live Concert</h3>
                     <p>Join us for an evening of live music and entertainment.</p>
                 </article>
                 <article class="event">
-                    <img src="https://images.freeimages.com/images/large-previews/b40/golf-1182602.jpg?fmt=webp&h=350"
+                    <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Concert">
                     <h3>Championship Game</h3>
                     <p>Come cheer on your favorite team at our next game.</p>
                 </article>
                 <article class="event">
-                    <img src="https://media.istockphoto.com/id/1347304123/photo/earth-day-diversity.jpg?s=2048x2048&w=is&k=20&c=lOgIBtgQe-kuF-__Nm8JN-XjT80bFZIDuiyjR48NCes=" alt="Concert">
+                    <img src="https://images.pexels.com/photos/801863/pexels-photo-801863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Concert">
                     <h3>Community Fair</h3>
                     <p>Get involved in local events and meet your neighbors.</p>
                 </article>
@@ -57,8 +82,20 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        Footer
+        <p> <a class="afooter" href="http://aldowebsite.com">&copy; 2025 Aldo Website LLC. All rights reserved.</a> 
+        </p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+      
+        toggle.addEventListener('click', () => {
+          navbar.classList.toggle('active');
+        });
+      </script>
+    
 </body>
 
 </html>
+

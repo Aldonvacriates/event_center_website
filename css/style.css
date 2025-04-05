@@ -4,6 +4,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 
   margin: 0;
+
 }
 
 .site-header {
@@ -179,13 +180,6 @@ footer {
       font-size: 0.9rem;
       padding: 0.4em 0.8em;
     }
-  }
-  
-  .menu-toggle {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
   }
   
   /* HAMBURGER STYLES */
@@ -445,6 +439,90 @@ footer {
     .contact-form {
       padding: 1.5rem;
       margin: 1rem;
+    }
+  }
+  
+
+  .menu-section {
+    background-color: white;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .menu-table thead th {
+    background-color: rgb(80, 5, 76);
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  
+  .menu-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+  
+  .menu-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .menu-table tbody tr:hover {
+    background-color: rgb(255, 215, 0);
+    color: rgb(80, 5, 76);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-table img {
+    width: 80px;
+    border-radius: 8px;
+  }
+  
+  /* 📱 Table scrollable on small screens */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Keep table layout consistent */
+  .table-responsive table {
+    min-width: 600px;
+  }
+  
+  @media (max-width: 600px) {
+    .menu-section {
+      padding: 1.5rem 1rem;
+    }
+  
+    .menu-table {
+      font-size: 0.9rem;
+    }
+  
+    .menu-table td,
+    .menu-table th {
+      padding: 0.75rem;
+    }
+  
+    .menu-table img {
+      width: 60px;
+    }
+  
+    .menu-table thead th {
+      font-size: 1rem;
+    }
+  
+    .featured .btn {
+      width: 100%;
     }
   }
   

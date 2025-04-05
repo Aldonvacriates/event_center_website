@@ -287,7 +287,7 @@ footer {
   }
   
   .featured .btn {
-    display: inline-block;
+    display: display-inside-block;
     margin-top: 1em;
     background-color: rgb(255, 215, 0);
     color: rgb(80, 5, 76);

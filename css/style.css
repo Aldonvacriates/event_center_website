@@ -151,6 +151,7 @@ footer {
     padding: 40px 20px;
     background-color: white;
     border-radius: 25px;
+
 }
 
 .event {
@@ -169,8 +170,9 @@ footer {
 
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    justify-items: center;
 }
 
 @media screen and (max-width: 600px) {

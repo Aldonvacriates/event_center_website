@@ -1,4 +1,4 @@
-# event_center_website# 🎉 Event Center Website | HTML & CSS Project
+🎉 Event Center Website | HTML & CSS Project
 
 Welcome to the **Event Center Website** – a multi-page responsive website built with pure **HTML** and **CSS**. This project showcases essential web development skills including semantic HTML, layout styling, responsive design, and user interface elements like forms and tables.
 

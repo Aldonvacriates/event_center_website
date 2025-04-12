@@ -31,7 +31,7 @@
     <main class="site-contact">
       <h1 class="contact-form" id="contact-us">Contact Us</h1>
       <!-- Form -->
-      <form class="contact-form">
+      <form class="contact-form" action="submit" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="firstname">First Name</label>
@@ -39,6 +39,7 @@
               type="text"
               id="firstname"
               name="firstname"
+              value="Jane"
               placeholder="Jane"
               required
             />
@@ -49,6 +50,7 @@
               type="text"
               id="lastname"
               name="lastname"
+              value="Cooper"
               placeholder="Cooper"
               required
             />
@@ -81,15 +83,15 @@
           <label>What are you looking for?</label>
           <div class="radio-group">
             <label>
-              <input type="radio" name="service" value="web" /> 
+              <input type="radio" name="service" value="raves" /> 
               Raves
             </label>
             <label>
-              <input type="radio" name="service" value="graphics" />
+              <input type="radio" name="service" value="concerts" />
               Concerts
             </label>
             <label>
-              <input type="radio" name="service" value="logo" />
+              <input type="radio" name="service" value="festivals" />
               Festivals
             </label>
             <label
@@ -110,7 +112,7 @@
           ></textarea>
         </div>
 
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn" value="Submit">Send Message</button>
       </form>
     </main>
 
